@@ -1,0 +1,199 @@
+body {
+	background: url(../img/bckg.png);
+}
+.dir-list {
+	margin: 40px 0;
+}
+.dir-list a.thumbnail {
+	text-decoration: none;
+}
+.dir-list a.thumbnail h4 {
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 5px;
+	border-bottom: 1px solid #428bca;
+}
+
+button {
+	outline: none !important;
+}
+
+/* CLNDR styles */
+.fc-view-container {
+	background-color: rgba(255,255,255,0.8);
+}
+
+.fc-basic-view td.fc-week-number span,
+.fc-basic-view td.fc-day-number {
+	padding-right: 5px;
+}
+
+.fc-basic-view td.fc-day-number.fc-today {
+	color: #f00;
+	font-weight: bold;
+}
+
+.fc-event {
+	padding: 3px;
+	cursor: pointer;
+}
+
+.fc-event.birthday {
+	background-color: #F01E1E !important;
+	border-color: #F01E1E !important;
+}
+
+.fc-event.work {
+	background-color: rgba(83, 187, 13, 0.33) !important;
+	border-color: rgba(89, 160, 42, 0.36) !important;
+	color: #627A5B !important;
+}
+
+.fc-event .fc-title > span {
+	display: block;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
+.fc-widget-content.fc-sun,
+.fc-widget-content.fc-sat {
+	background-color: rgba(253, 0, 0, 0.06) !important;
+}
+
+.fc-day-number.fc-sun,
+.fc-day-number.fc-sat {
+	color: #f00;
+}
+
+.fc-day.fc-today {
+	background: #CBE6F8;
+}
+
+.modal {
+	background-color: rgba(0,0,0,0.6);
+	padding: 5%;
+}
+
+.modal-block {
+	background-color: #ffffff;
+	padding: 2%;
+}
+
+#add-clndr .fc-add-button {
+	display: none;
+}
+
+#add-clndr .fc-day {
+	cursor: pointer;
+}
+
+.dropdown button > i,
+.date > i {
+	font-style: normal;
+}
+
+#date-list {
+	padding: 0;
+	margin: 0;
+}
+
+#date-list li {
+	margin: 0 2px 2px 0;
+	padding-right: 40px;
+	position: relative;
+}
+
+#date-list .date > span {
+	position: absolute;
+	height: 100%;
+	width: 30px;
+	top: 0;
+	right: 0;
+	border-left: 1px solid #ccc;
+	background: url(../img/cr.png) no-repeat center center;
+}
+
+#new-date form {
+	margin-bottom: 15px;
+}
+
+.edit {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	padding: 20px;
+	width: 340px;
+	margin-left: -170px;
+	background: #fff;
+	z-index: 100;
+	border-left: 1px solid #BBB;
+	border-right: 1px solid #BBB;
+	border-bottom: 1px solid #BBB;
+
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-khtml-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+
+	-webkit-box-shadow: 0 2px 6px 2px rgba(0,0,0,0.3);
+	box-shadow: 0 2px 6px 2px rgba(0,0,0,0.3);
+}
+
+.edit > .form-inline {
+	width: 100%;
+	font-size: 0;
+}
+
+.edit > .form-inline .note-input {
+	width: 70% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.edit > .form-inline .type-input {
+	width: 30% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.edit hr {
+	margin-top: 10px;
+	margin-bottom: 10px;}
+
+
+
+
+/*
+*************************************************
+********** Styles for mobile devices ************
+*************************************************
+*/
+@media screen and (max-width: 480px) {
+	.container {
+		padding-left: 5px;
+		padding-right: 5px;}
+
+	.dir-list {
+		margin: 15px 0;}
+
+	.fc-toolbar {
+		text-align: center;}
+
+	.fc-toolbar * {
+		float: none !important;}
+
+	.fc-toolbar h2 {
+		margin-bottom: 10px;}
+
+	.modal-block {
+		height: 100%;}
+
+	.modal {
+		padding: 0;}
+
+	.edit {
+		padding-left: 10px;
+		padding-right: 10px;}
+}

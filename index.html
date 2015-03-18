@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nevskaya</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fullcalendar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/moment-recur.js"></script>
+    <script src="js/fullcalendar.js"></script>
+    <script src="js/js.js"></script>
+
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-block">
+        <div id="new-date">
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="text" class="form-control" id="note" placeholder="Note">
+            </div>
+            <div class="form-group">
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="type" data-toggle="dropdown" aria-expanded="true">
+                  <i>Type</i>
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Birthday</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Event</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vacation</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Holiday</a></li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn btn-success" id="add-date">Add date</button>
+            <button type="button" class="btn btn-default" id="reset">Cancel</button>
+          </form>
+          <div>
+            <ul id="date-list"></ul>
+          </div>
+        </div>
+        <div id="add-clndr"></div>
+      </div>
+    </div>
+    <div class="edit">
+      <form class="form-inline">
+        <div class="form-group note-input">
+          <input type="text" class="form-control" id="note" placeholder="Note">
+        </div>
+        <div class="form-group type-input">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="type" data-toggle="dropdown" aria-expanded="true">
+              <i>Type</i>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Birthday</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Event</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vacation</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Holiday</a></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+      <hr>
+      <button type="button" class="btn btn-success" id="save-date">Save date</button>
+      <button type="button" class="btn btn-danger" id="delete">Delete</button>
+      <button type="button" class="btn btn-default" id="cancel">Cancel</button>
+    </div>
+    <div class="container">
+      <div class="row dir-list">
+        <div id="clndr"></div>
+      </div>
+    </div>
+  </body>
+</html>
